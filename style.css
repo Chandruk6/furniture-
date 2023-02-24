@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav {
+  z-index: 1;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+span {
+  color: rgb(210, 208, 208);
+  font-size: 1.5rem;
+  padding-left: 30px;
+  line-height: 50px;
+}
+
+.nav ul {
+  padding-left: 20%;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 50px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+  padding: 15px 10px;
+}
+
+.nav ul li a:hover {
+  color: rgb(255, 204, 0);
+
+}
+
+.pos{
+  position: absolute;
+  bottom:40%;
+  left: 45%;
+}
+.button {
+  display: none;
+  float: right;
+}
+.btn1{
+  background-color:black ;
+  color: white;
+  width: 8rem;
+  border-radius: 10Px;
+}
+.bg{
+background-image: url('image/bg-1.png');
+background-repeat: no-repeat;
+background-position: center;
+}
+.btn2{
+  background-color:black ;
+  color: white;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 10Px;
+}
+.btn2:hover{
+  background-color: white;
+  color: black;
+}
+.btn3{
+   background-color:rgb(255, 204, 0) ;
+ color: gray ;
+   width: 20%;
+   height: 10%;
+}
+.btn3:hover{
+  background-color: white;
+  color: gray ;
+  width: 20%;
+  height: 10%;
+}
+
+/*card*/
+.Portfolio .row .col-sm-6 img{
+  border: 10px solid white;
+  width:100%;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.products-preview{
+  position: fixed;
+  top:0; left:0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-preview .preview{
+  display: none;
+  padding:2rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin:2rem;
+  width: 40rem;
+}
+
+.products-preview .preview.active{
+  display: inline-block;
+}
+
+.products-preview .preview img{
+  height: 20rem;
+}
+
+.products-preview .preview .fa-times{
+  position: absolute;
+  top:1rem; right:1.5rem;
+  cursor: pointer;
+  color:#3a3a3a;
+  font-size:2rem;
+}
+
+
+.products-preview .preview h3{
+  color:#444;
+  padding:.5rem 0;
+  font-size: 2.5rem;
+}
+
+.products-preview .preview p{
+  line-height: 1.5;
+  padding:1rem 0;
+  font-size: 1rem;
+  color:#777;
+}
+
+
+/*card end*/
+@media (max-width:768px) {
+  .nav ul {
+    position: fixed;
+    width: 50%;
+    height: 95vh;
+    background-color:rgb(255, 204, 0) ;
+    text-align: center;
+    padding: 0;
+    top: 50px;
+    right: -100%;
+  }
+
+  .nav ul.navbar {
+    right: 0;
+    transition: .5s ease;
+
+  
+  }
+
+  .nav ul li {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav ul li:hover a {
+    background-color: rgb(11, 11, 11);
+    color: rgb(250, 249, 249);
+  }
+
+  .nav ul li a {
+    border: none;
+    color: rgb(11, 11, 11);
+  }
+
+  span {
+    font-size: 1rem;
+    padding-left: 20px;
+    line-height: 50px;
+  }
+ 
+  .button {
+    padding-right: 10px;
+    margin: 0px;
+    padding-top: 10px;
+    display: block;
+    color: rgb(11, 11, 11);
+    padding-left: 15%
+  }
+  .pos{
+    position: absolute;
+    bottom:10%;
+    left: 25%;
+  }
+}
+.btn {
+
+  background-color: #F3AE14;
+  color: white;
+}
+.btn1{
+  background-color:black ;
+  color: white;
+  width: 20%;
+  height: 20%;
+  border-radius: 10Px;
+}
+.btn1:hover{
+  background-color: white;
+  color: black;
+}
+
+ .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider-item,
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.slider-btns {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-btns button {
+  font-size: 30px;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+
+}
